@@ -17,11 +17,11 @@
         <!-- 소셜 로그인 버튼 추가 -->
         <div class="social-login-buttons">
           <button id="custom-login-btn" @click="kakaoLogin()" class="social-button kakao-button">
-            <img src="@/assets/kakao.png" alt="Kakao Icon" class="social-icon" />
+            <img src="../assets/kakao.png" alt="Kakao Icon" class="social-icon" />
             카카오 계정으로 로그인
           </button>
           <button class="social-button google-button">
-            <img src="@/assets/google.png" alt="Google Icon" class="social-icon" />
+            <img src="../assets/google.png" alt="Google Icon" class="social-icon" />
             구글 계정으로 로그인
           </button>
           <button class="social-button naver-button">네이버 계정으로 로그인</button>
