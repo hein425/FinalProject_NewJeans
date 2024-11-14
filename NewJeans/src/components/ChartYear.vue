@@ -55,7 +55,7 @@
           }
   
           const response = await axios.get(`${BASE_URL}/statistics/year`, {
-            params: { userIdx, year: this.currentYear },
+            params: { userIdx: userIdx, year: this.currentYear },
           });
           const data = response.data || [];
   
@@ -160,8 +160,9 @@
         }
       },
       changeYear(direction) {
+        const authStore = useAuthStore();
         this.currentYear += direction;
-        this.fetchData();
+        this.fetchData(authStore.idx);
       },
     },
   };
