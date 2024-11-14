@@ -101,7 +101,7 @@
           </div>
         </div>
         <div v-else>
-          <p>해당 날짜에 등록된 일정이 없습니다.</p>
+          <p class="no-DS-message">해당 날짜에 등록된 일정이 없습니다.</p>
         </div>
       </div>
 
@@ -189,7 +189,7 @@
           </div>
         </div>
         <div v-else>
-          <p>해당 날짜에 작성된 일기가 없습니다.</p>
+          <p class="no-DS-message">해당 날짜에 작성된 일기가 없습니다.</p>
         </div>
       </div>
     </div>
@@ -881,5 +881,18 @@ const removeScheduleImage = index => {
   position: relative;
   display: inline-block;
   margin: 5px;
+}
+
+
+.no-DS-message {
+  font-size: 1.1rem; /* 글씨를 조금 더 크게 설정 */
+  color: #666; /* 부드러운 회색 */
+  text-align: center; /* 중앙 정렬 */
+  margin: 20px 0; /* 위아래 여백 추가 */
+  font-weight: 500; /* 약간 두껍게 설정 */
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8f8f8; /* 살짝 톤다운된 배경색 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
 }
 </style>

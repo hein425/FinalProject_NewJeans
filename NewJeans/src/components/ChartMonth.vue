@@ -29,11 +29,11 @@
         currentYear: today.getFullYear(),
         currentMonth: today.getMonth() + 1,
         colors: {
-          DAILY: '#ff6384',
-          GROWTH: '#36a2eb',
-          TRIP: '#ffce56',
-          EXERCISE: '#4bc0c0',
-          ETC: '#9966ff',
+          DAILY: '#fcd1d7',
+          GROWTH: '#adf2f1',
+          TRIP: '#d0eed5',
+          EXERCISE: '#ffffc9',
+          ETC: '#ebcbf4',
         },
         isLoading: false,
       };

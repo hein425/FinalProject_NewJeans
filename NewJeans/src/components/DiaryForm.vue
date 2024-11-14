@@ -195,11 +195,11 @@ const removeImage = (index) => {
 
 /* 입력 필드 스타일 */
 .input-field {
-  border: none;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  color: #333;
+  padding: 10px 12px; /* 양쪽 패딩을 추가하여 입력 필드 안의 텍스트 위치를 조정 */
+  margin: 0 5px; /* 외부 마진을 적용하여 양쪽 밸런스를 맞추기 */
+  width: calc(100% - 34px); /* 좌우 패딩과 마진을 포함하여 전체 넓이에 맞추기 */
 }
 
 .textarea-field {
@@ -273,4 +273,170 @@ const removeImage = (index) => {
   align-items: center;
   justify-content: center;
 }
+.diary-form {
+  border: 1px solid #ccc;
+  margin-top: 10vh;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.title-category-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 2;
+}
+
+.category-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.diary-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #2196f3;
+}
+
+.textarea-field {
+  height: 180px;
+  resize: none;
+}
+
+/* 이미지 미리보기 스타일 */
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-container {
+  margin: 5px;
+  position: relative;
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* 버튼 행 스타일 */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.submit-button,
+.cancel-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button {
+  background-color: #343434;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #505050;
+}
+
+.cancel-button {
+  background-color: #808080;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #666666;
+}
+
+/* 파일 선택 버튼 스타일 */
+input[type="file"] {
+  display: none;
+}
+
+label[for="image"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #222222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+label[for="image"]:hover {
+  background-color: #525151;
+}
+
 </style>
